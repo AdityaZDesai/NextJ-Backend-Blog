@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require("mongoose");
 const app = express();
-const port = 5000;
+const port = 3000;
 app.use(express.json()); // Middleware to parse JSON bodies
 console.log(process.env.MONGODB_URL)
 mongoose.connect(process.env.MONGODB_URL, {
